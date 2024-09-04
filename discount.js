@@ -8,15 +8,13 @@ Free Drinks
 
 var burger = 600;
 
-if(burger > 500){
-    console.log("You get a free coke ")
-} else{
-    console.log(" coke 30 tk you have to pay")
+if (burger > 500) {
+  console.log("You get a free coke ");
+} else {
+  console.log(" coke 30 tk you have to pay");
 }
 
-
-
-//!fil 2 
+//!fil 2
 /*** 
 
 BMI Calculator and Health Category
@@ -31,22 +29,16 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 
 */
 
-var bmi=25
+var bmi = 25;
 
-if(bmi<18.5){
-    console.log("you are underweight")
-
-
-}else if(bmi>=18.5 && bmi <= 24.9){
-
-    console.log("you are normal")
-
-}else if(bmi >= 25 && bmi <=29.9){
-
-    console.log("You are OverWeight")
-
-}else{
-    console.log("You are Obese")
+if (bmi < 18.5) {
+  console.log("you are underweight");
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+  console.log("you are normal");
+} else if (bmi >= 25 && bmi <= 29.9) {
+  console.log("You are OverWeight");
+} else {
+  console.log("You are Obese");
 }
 
 //!fil 3
@@ -64,27 +56,19 @@ Create a simple JavaScript program that takes a student's score as input and ret
 
 ***/
 
-var result= 0;
+var result = 0;
 
-if( result>=90){
-    console.log("A")
-
-}else if(result>=80){
-
-    console.log("B")
-
-}else if(result>=70){
-
-    console.log("C")
-
-}else if(result>=60){
-
-    console.log("D")
-
-} else if(result<=59){
-    console.log("Fail")
+if (result >= 90) {
+  console.log("A");
+} else if (result >= 80) {
+  console.log("B");
+} else if (result >= 70) {
+  console.log("C");
+} else if (result >= 60) {
+  console.log("D");
+} else if (result <= 59) {
+  console.log("Fail");
 }
-
 
 // ! fil 4
 
@@ -101,28 +85,19 @@ Note:
 use nested if-else-if-else
 */
 
-var marks= 93
+var marks = 93;
 
-
-if(marks>80){
-
-    console.log("Let's go For a Lunch")
-
-}else if(marks<=80 && marks >= 60){
-
-    console.log("Good Luck For Next Time")
-
-}else if(marks<=60 && marks >= 40){
-
-    console.log("Unseen His Massage")
-
-} else if( marks<40){
-    console.log("Block")
+if (marks > 80) {
+  console.log("Let's go For a Lunch");
+} else if (marks <= 80 && marks >= 60) {
+  console.log("Good Luck For Next Time");
+} else if (marks <= 60 && marks >= 40) {
+  console.log("Unseen His Massage");
+} else if (marks < 40) {
+  console.log("Block");
 }
 
-
 //! Fil 5
-
 
 /***
 
@@ -133,25 +108,19 @@ Ticket fare Calculator
     - Otherwise Regular ticket fare 800 tk
 */
 
-
 var age = 50;
-var ticket=800;
+var ticket = 800;
 
-var isStudent= true;
+var isStudent = true;
 
-if( age<10 ){
-
-    console.log("Free Ticket")
-
-
-}else if( age >=60 ){
-       var payment= ticket * 0.15
-    console.log("You Have to pay 15% = " + payment)
-
-
-}else if(isStudent){
-   var studentPayment= ticket*500/100
-    console.log("Student off 50% = " + studentPayment)
-} else{
-    console.log("Regular ticket fare 800 tk")
+if (age < 10) {
+  console.log("Free Ticket");
+} else if (age >= 60) {
+  var payment = ticket * 0.15;
+  console.log("You Have to pay 15% = " + payment);
+} else if (isStudent) {
+  var studentPayment = (ticket * 500) / 100;
+  console.log("Student off 50% = " + studentPayment);
+} else {
+  console.log("Regular ticket fare 800 tk");
 }
