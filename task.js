@@ -142,5 +142,3 @@ console.log(countConsonant(input2));  // This will print the number of consonant
 
 
 
-
-
