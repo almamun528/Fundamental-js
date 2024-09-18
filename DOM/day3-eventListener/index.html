@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Event Listener Practice Task</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>add event Listener OnClick</h1>
+        <button onclick="document.body.style.backgroundColor='Yellow'">
+          Yellow
+        </button>
+
+        <!-- <button onclick="console.log('hello How is going?')">click me</button> -->
+
+        <button id="makeBlue">Blue</button>
+
+        <button id="purple">Purple</button>
+        <br />
+        <h1>Add event Listener starts</h1>
+        <hr />
+        <br />
+        <button id="makePink">Pink</button>
+        <button id="makeRed">Red</button>
+
+        <button id="golden">golden</button>
+
+        <!--  -->
+        <hr>
+        <br>
+
+        <h1 id="title">Hello World</h1>
+        <button onclick="convertText ()">Click to change</button>
+
+        <script>
+            function convertText (){
+              const getTitle =  document.getElementById('title')
+                getTitle.innerText = "how is going?"
+            }
+        </script>
+
+        <!-- !Mostly use case -->
+
+        <br>
+        <h1 id="defaultText">Default Text</h1>
+        <button id="converter">convert It</button>
+
+        <script>
+            document.getElementById('converter').addEventListener('click', function(){
+               const getText = document.getElementById("defaultText")
+               getText.innerText = "Dynamic Text"
+            })
+        </script>
+
+      </section>
+    </main>
+
+    <br>
+        <hr>
+        <br>
+
+
+
+    <!--  -->
+    <script>
+      const makeBlueButton = document.getElementById("makeBlue");
+      makeBlueButton.onclick = function () {
+        document.body.style.backgroundColor = "blue";
+      };
+
+      const purpleButton = document.getElementById("purple");
+      // console.log(purpleButton)
+      purpleButton.onclick = function () {
+        document.body.style.backgroundColor = "purple";
+      };
+      // addEventListener
+
+      const pinkButton = document.getElementById("makePink");
+      pinkButton.addEventListener("click", function () {
+        document.body.style.backgroundColor = "pink";
+      });
+
+      // another way
+      const redButton = document.getElementById("makeRed");
+      console.log(redButton);
+      redButton.addEventListener("click", convertRed);
+      function convertRed() {
+        document.body.style.backgroundColor = "red";
+      }
+
+      // ! Final Way to write and we will use this maximum time
+
+      document
+        .getElementById("golden")
+        .addEventListener("click", function makeGolden() {
+          document.body.style.backgroundColor = "goldenrod";
+        });
+    </script>
+  </body>
+</html>

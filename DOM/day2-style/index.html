@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .yellowGg{
+        background-color: blueviolet!important;
+        h1{
+          color: crimson;
+        }
+      }
+      .center{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="firstSection" class="center">
+      <h1>My Friends Name</h1>
+      <ul>
+        <li>Rahim</li>
+        <li>Karim</li>
+        <li>Jarim</li>
+        <li>Harim</li>
+        <li>Narim</li>
+      </ul>
+    </section>
+    <section>
+      <h1> Car Brand lists</h1>
+      <ul>
+        <li>Toyota</li>
+        <li>BMW</li>
+        <li>Nishan</li>
+        <li>Tesla</li>
+        <li>Tata</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Subject I like</h1>
+      <ul>
+        <li>Philosophy </li>
+        <li>Psychology</li>
+        <li>History</li>
+        <li>Literature</li>
+        <li>Novel</li>
+      </ul>
+    </section>
+    <section id="lastSection">
+      <h1>Places I like to visit</h1>
+      <ul>
+        <li>Chittagong</li>
+        <li>Kaligonj</li>
+        <li>Keranigonj</li>
+        <li>MunshiGonj</li>
+        <li>Gopalginj</li>
+      </ul>
+    </section>
+
+    <script>
+      const getTags = document.getElementsByTagName("section");
+      for (let section of getTags) {
+        section.style.backgroundColor = "red";
+        section.style.padding = '1px 30px';
+        section.style.margin ='15px'
+        section.style.borderRadius = '20px'
+        section.style.color= "#fff"
+      }
+
+      const getLastSection = document.getElementById('lastSection')
+      getLastSection.style.backgroundColor = 'darkgreen'
+
+      const createLi = document.createElement('li')
+      createLi.innerText ='St.Martin'
+      // console.log(createLi)
+      getLastSection.append(createLi)
+
+      //adding class by js
+      const first = document.getElementById('firstSection')
+     first.classList.add('yellowGg') // adding this class from css line number 8
+     first.classList.remove('center')// removing center class and text align becomes left. 
+
+
+        
+
+    </script>
+  </body>
+</html>

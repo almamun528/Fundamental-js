@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    #Fruits-container li{
+        color: crimson;
+    }
+</style>
+</head>
+<body>
+<section>
+    <main>
+        <h1>Hello world</h1>
+        <br>
+    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quisquam?</p>
+    
+        <br>
+    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quisquam?</p>
+    
+        <br>
+        
+        <h1>Hello world </h1>
+        <br>
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quisquam?</p>
+    
+        <br>
+        <h1>hello1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quisquam?</p>
+    
+        <br>
+    
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, quisquam?</p>
+    
+        <button id="btn-1">Click me </button>
+        <ul>
+            <li>One</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ul>
+
+
+        <br>
+    </main>
+
+    <br>
+
+
+
+</section>
+
+    <section class="content">
+        <h1>Fruits I Like Most</h1>
+        <ul id="Fruits-container">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Malta</li>
+            <li>WoodApple</li>
+        </ul>
+    </section> <br>
+
+    <section >
+        <h1 id="spot-title" class="place spot disrticList zone state">Place I Like Most</h1>
+        <ul>
+            <li class="boxes" >Gazipur</li>
+            <li class="boxes" >Shylet</li>
+            <li class="boxes" >Chattagong</li>
+            <li class="boxes" >Kapashiya</li>
+        </ul>
+    </section>
+    <script>
+        
+        // document.getElementsByClassName('content') [0].innerText
+
+        // document.getElementsByClassName('content') [0].innerHTML = '<h1> This is winter Fruites </h1>'
+
+       const changeColor = document.getElementById('spot-title').style.backgroundColor ='red'
+       console.log(changeColor)
+       const title = document.getElementById('spot-title')
+
+       document.getElementById('fruits-container')[0] = 'this is winter fruits '
+        title.getAttribute('class') // it will show all class 
+
+        class add and remove 
+        title.classList  //it will show all classes 
+        title.classList.add('city') //it will add city class into title 
+        title.classList.remove('spot') // it will remove spot class
+
+       
+    //   const liCollection = document.getElementsByTagName('li')
+    //     for(let li of liCollection){
+    //         console.log(li.innerText)
+    //     }
+
+    // const heading = document.getElementsByTagName('h1')
+    // for( const h1 of heading){
+    //     console.log(h1.innerText)
+    // }
+
+    // const someLi = document.querySelectorAll('#Fruits-container li')
+
+    // // console.log(someLi)
+    // for( const li of someLi ){
+    // console.log(li.innerText)
+    // }
+
+    </script>
+</body>
+</html>

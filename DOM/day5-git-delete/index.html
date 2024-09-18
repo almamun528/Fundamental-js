@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Delete your Repo</h1>
+    <input id="inputText" type="text" />
+    <button id="btn-delete" disabled>delete</button>
+    <script>
+      document.getElementById('inputText').addEventListener('keyup', function(event){
+          const text = event.target.value
+          const deleteButton = document.getElementById('btn-delete')
+          if(text === 'delete'){
+              deleteButton.removeAttribute('disabled')
+          }else{
+              deleteButton.setAttribute('disabled',true)
+          }
+      })
+
+
+      // })
+    </script>
+  </body>
+</html>

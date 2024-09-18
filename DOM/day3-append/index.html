@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append JS</title>
+</head>
+<body>
+    <main id="sclContainer">
+        <div>
+            <h1> kamarjury Yousuf Ali High School</h1>
+        </div>
+        <section >
+            <h1> 10 Polash </h1>
+
+            <ul id="aSection">
+                <li>Mamun</li>
+                <li>Habib</li>
+                <li>Shakil</li>
+                <li>Shishir</li>
+                <li>Talha</li>
+            </ul>
+
+        </section>
+    </main>
+
+
+    <script>
+        // adding a list 
+        const createLi = document.createElement("li")
+        createLi.innerText ="Yeasin"
+        document.getElementById('aSection').append(createLi)
+
+        // adding full section 
+        const scl = document.getElementById('sclContainer')
+        // console.log(scl)
+
+        const section = document.createElement("section")
+        const h1 = document.createElement("h1")
+        h1.innerText = "10 Golap"
+
+        section.appendChild(h1) //keeping the h1 into the section
+
+        const ul = document.createElement('ul')
+        section.appendChild(ul)
+
+        const studentList = document.createElement('li')
+        studentList.innerText = 'Kanon'
+
+        const two = document.createElement('li')
+        two.innerText = 'Sunny'
+        ul.appendChild(two)
+        const one = document.createElement('li')
+        one.innerText = 'Anik'
+        ul.appendChild(one)
+
+        const three = document.createElement('li')
+        three.innerText = 'Limon'
+        ul.appendChild(three)
+
+        ul.append(studentList)
+    
+        scl.appendChild(section)
+
+
+
+        // easy way to do it with backTick `   `
+
+        const section2 = document.createElement('section')
+
+        section2.innerHTML = `
+            <h1>10 Shimul </h1>
+            <ul>
+                <li> Sandid </li>
+                <li> Khairul </li>
+                <li> Alif </li>
+                <li> Tushar </li>
+            </ul> 
+        `
+        scl.appendChild(section2)
+
+    </script>
+</body>
+</html>

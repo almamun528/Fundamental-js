@@ -9,7 +9,7 @@ function calculateTax(income, expense){
 
 }
 
-
+//! 2
 function sendNotification(email) {
     if(typeof email  !== "string"){
         return "Invalid email"
@@ -35,14 +35,11 @@ function sendNotification(email) {
     }return result1+ " sent you an email from " + result2
     
 }
-
+//!3
 function checkDigitsInName(name) {
     if(typeof name !== "string"){
         console.log("Invalid Input")
     }
-    let hasNumber = true
-    let noNumber = false
-
 
     for( let i = 0; i<name.length; i++ ){
         if(!isNaN(name[i])){
@@ -55,7 +52,7 @@ function checkDigitsInName(name) {
     
 
 }
-
+console.log
 
 function calculateFinalScore(obj) {
     if (typeof obj !== "object"){
@@ -90,7 +87,7 @@ function  waitingTime(waitingTimes  , serialNumber) {
     let totalTime = averageTimeOfCandidate
     let result = Math.round(totalTime)
     
-    let serialOFIsrat = serialNumber -1
+    let serialOFIsrat = serialNumber -1 
     let herNumber = serialOFIsrat
     let totalCandidates = herNumber - waitingTimes.length
     let expectedTime = totalCandidates * result
